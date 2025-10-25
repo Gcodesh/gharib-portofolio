@@ -1,7 +1,23 @@
-import { Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Facebook } from "lucide-react";
 import { Button } from "./ui/button";
+import { Input } from "./ui/input";
+import { Textarea } from "./ui/textarea";
+import { useToast } from "@/hooks/use-toast";
+import { useState } from "react";
 
 const Contact = () => {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    toast({
+      title: "Message sent!",
+      description: "Thank you for reaching out. I'll get back to you soon!",
+    });
+    setFormData({ name: "", email: "", message: "" });
+  };
+
   return (
     <section id="contact" className="section-spacing bg-secondary/30">
       <div className="container mx-auto max-w-4xl text-center">
@@ -23,25 +39,36 @@ const Contact = () => {
             </a>
 
             <a
-              href="https://github.com/gharibshaaban"
+              href="https://github.com/Gcodesh"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-card border border-border rounded-xl p-6 card-glow hover:scale-105 transition-all group"
             >
               <Github className="w-8 h-8 text-primary mx-auto mb-3 group-hover:scale-110 transition-transform" />
               <p className="font-semibold text-foreground mb-1">GitHub</p>
-              <p className="text-sm text-muted-foreground">github.com/gharibshaaban</p>
+              <p className="text-sm text-muted-foreground">github.com/Gcodesh</p>
             </a>
 
             <a
-              href="https://linkedin.com/in/gharibshaaban"
+              href="https://www.linkedin.com/in/abn-shaban-gharib-aa9163358"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-card border border-border rounded-xl p-6 card-glow hover:scale-105 transition-all group"
             >
               <Linkedin className="w-8 h-8 text-primary mx-auto mb-3 group-hover:scale-110 transition-transform" />
               <p className="font-semibold text-foreground mb-1">LinkedIn</p>
-              <p className="text-sm text-muted-foreground">linkedin.com/in/gharibshaaban</p>
+              <p className="text-sm text-muted-foreground">linkedin.com/in/abn-shaban-gharib</p>
+            </a>
+
+            <a
+              href="https://www.facebook.com/share/167i8vaZsd/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-card border border-border rounded-xl p-6 card-glow hover:scale-105 transition-all group"
+            >
+              <Facebook className="w-8 h-8 text-primary mx-auto mb-3 group-hover:scale-110 transition-transform" />
+              <p className="font-semibold text-foreground mb-1">Facebook</p>
+              <p className="text-sm text-muted-foreground">facebook.com/gharibshaaban</p>
             </a>
 
             <div className="bg-card border border-border rounded-xl p-6 card-glow">
@@ -52,15 +79,35 @@ const Contact = () => {
           </div>
 
           <div className="pt-8">
-            <Button 
-              size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-12 shadow-lg shadow-primary/30"
-              asChild
-            >
-              <a href="mailto:gharib.s.dev@gmail.com">
-                Send me a message
-              </a>
-            </Button>
+            <form onSubmit={handleSubmit} className="max-w-lg mx-auto space-y-4">
+              <Input
+                placeholder="Your Name"
+                value={formData.name}
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                required
+              />
+              <Input
+                type="email"
+                placeholder="Your Email"
+                value={formData.email}
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                required
+              />
+              <Textarea
+                placeholder="Your Message"
+                value={formData.message}
+                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                required
+                rows={5}
+              />
+              <Button 
+                type="submit"
+                size="lg" 
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold shadow-lg shadow-primary/30"
+              >
+                Send Message
+              </Button>
+            </form>
           </div>
         </div>
       </div>

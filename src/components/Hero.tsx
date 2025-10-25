@@ -48,10 +48,10 @@ const Hero = () => {
               Get in touch
             </Button>
             <div className="flex gap-4">
-              <a href="https://github.com/gharibshaaban" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://github.com/Gcodesh" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Github className="w-6 h-6" />
               </a>
-              <a href="https://linkedin.com/in/gharibshaaban" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/in/abn-shaban-gharib-aa9163358" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin className="w-6 h-6" />
               </a>
               <a href="mailto:gharib.s.dev@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
