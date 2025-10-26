@@ -12,7 +12,6 @@ const About = () => {
     { number: "10+", label: "Projects Completed" },
     { number: "2+", label: "Years of Experience" },
     { number: "500+", label: "Commits Pushed" },
-    { number: "∞", label: "Cups of Coffee" },
   ];
 
   return (
@@ -52,7 +51,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {stats.map((stat, index) => (
             <div
               key={index}
