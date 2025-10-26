@@ -4,8 +4,8 @@ const About = () => {
     "React",
     "Tailwind CSS",
     "Node.js (basic)",
-    "UI/UX Design",
     "Git & GitHub",
+    "VS Code",
   ];
 
   const stats = [

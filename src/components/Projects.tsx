@@ -5,28 +5,28 @@ const Projects = () => {
   const projects = [
     {
       title: "Didi Storefront",
-      description: "A modern e-commerce web app featuring product cards, advanced filters, and localStorage-based cart system. Built with React and styled with Tailwind CSS.",
+      description: "Modern e-commerce web app with product cards, filter, localStorage cart.",
       tags: ["React", "Tailwind", "LocalStorage"],
       demo: "#",
       github: "#"
     },
     {
       title: "SBAW Education Platform",
-      description: "A sleek educational website featuring multi-language support and a clean dashboard UI. Focused on delivering an intuitive learning experience.",
+      description: "Multi-language educational website with dashboard UI & content management.",
       tags: ["React", "i18n", "Dashboard"],
       demo: "#",
       github: "#"
     },
     {
       title: "AI Text Refiner",
-      description: "A web tool that rewrites AI-generated content to sound more human and natural. Integrates with AI APIs to provide instant refinements.",
+      description: "Web tool to rewrite AI-generated content to sound more human and natural.",
       tags: ["React", "AI API", "NLP"],
       demo: "#",
       github: "#"
     },
     {
       title: "Portfolio Builder",
-      description: "A responsive portfolio template generator built with HTML, CSS, and JavaScript. Allows users to customize and export their portfolios.",
+      description: "Responsive portfolio template generator built with HTML/CSS/JS for fast deployment.",
       tags: ["HTML", "CSS", "JavaScript"],
       demo: "#",
       github: "#"

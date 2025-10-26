@@ -3,22 +3,16 @@ import { Quote } from "lucide-react";
 const Recommendations = () => {
   const recommendations = [
     {
-      text: "Gharib combines creativity and precision — a rare mix in developers. His attention to detail is impressive.",
+      text: "Gharib combines creativity and precision—an exceptional developer whose attention to detail stands out.",
       author: "Ahmed Fathi",
       role: "Software Engineer",
-      company: "Tech Solutions Inc."
+      company: ""
     },
     {
-      text: "He transforms concepts into polished, real-world designs with remarkable clarity and dedication.",
+      text: "He transforms concepts into polished real-world designs with clarity and dedication.",
       author: "Sara Khaled",
       role: "Project Manager",
-      company: "Digital Innovations"
-    },
-    {
-      text: "Working with Gharib was a pleasure. His scientific approach to problem-solving really sets him apart.",
-      author: "Mohamed Hassan",
-      role: "Lead Developer",
-      company: "CodeCraft"
+      company: ""
     }
   ];
 
@@ -30,7 +24,7 @@ const Recommendations = () => {
           <p className="text-muted-foreground text-lg">What people say about working with me</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {recommendations.map((rec, index) => (
             <div
               key={index}
@@ -44,7 +38,6 @@ const Recommendations = () => {
               <div className="border-t border-border pt-4">
                 <p className="font-semibold text-foreground">{rec.author}</p>
                 <p className="text-sm text-primary">{rec.role}</p>
-                <p className="text-sm text-muted-foreground">{rec.company}</p>
               </div>
             </div>
           ))}

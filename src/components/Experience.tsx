@@ -8,9 +8,7 @@ const Experience = () => {
       period: "2023 - Present",
       location: "Remote",
       description: [
-        "Built and designed responsive websites for personal brands and small businesses using React and Tailwind",
-        "Collaborated with clients to transform ideas into polished, user-friendly interfaces",
-        "Implemented modern UI/UX patterns and optimized performance across devices"
+        "Designing and building responsive sites for personal brands and small businesses using React & Tailwind"
       ]
     },
     {
@@ -19,9 +17,7 @@ const Experience = () => {
       period: "2021 - 2023",
       location: "Cairo, Egypt",
       description: [
-        "Worked on projects combining chemistry and data analysis",
-        "Explored AI-assisted diagnostics using machine learning approaches",
-        "Presented research findings at university symposiums"
+        "Applied data-driven approaches in chemistry, exploring early AI diagnostics and interface design for scientific applications"
       ]
     },
     {
@@ -30,9 +26,7 @@ const Experience = () => {
       period: "2022 - Present",
       location: "Remote",
       description: [
-        "Contributed to front-end improvements and bug fixes in community-driven projects",
-        "Collaborated with developers worldwide on GitHub repositories",
-        "Focused on UI optimization and accessibility enhancements"
+        "Contributing UI enhancements, documentation and bug fixes in community-driven projects"
       ]
     }
   ];

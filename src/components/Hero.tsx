@@ -25,39 +25,50 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
           <div className="space-y-4">
             <p className="text-lg text-muted-foreground">Hi, I'm</p>
-            <h1 className="text-6xl md:text-7xl font-bold text-gradient">
+            <h1 className="text-5xl md:text-7xl font-bold text-gradient">
               Gharib Shaaban
             </h1>
-            <div className="text-3xl md:text-4xl font-semibold text-foreground/90">
-              Front-End Developer & Chemist
+            <div className="text-2xl md:text-3xl font-semibold text-foreground/90">
+              I build responsive web interfaces with a scientific mindset
             </div>
           </div>
           
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            I build elegant, responsive, and user-friendly web experiences.
-            Blending a scientific mindset with modern web design to create beautiful,
-            logical, and functional digital products.
+          <p className="text-lg text-accent font-medium mb-4">
+            Turning ideas into interactive experiences.
+          </p>
+          
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            With a background in chemistry and a passion for front-end development, I combine research-driven logic with modern UI/UX design to craft clean, functional, and delightful websites.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 shadow-lg shadow-primary/30"
+              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              View Projects
+            </Button>
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="px-8"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Get in touch
+              Contact Me
             </Button>
-            <div className="flex gap-4">
-              <a href="https://github.com/Gcodesh" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                <Github className="w-6 h-6" />
-              </a>
-              <a href="https://www.linkedin.com/in/abn-shaban-gharib-aa9163358" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                <Linkedin className="w-6 h-6" />
-              </a>
-              <a href="mailto:gharib.s.dev@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
-                <Mail className="w-6 h-6" />
-              </a>
-            </div>
+          </div>
+          
+          <div className="flex gap-4 justify-center">
+            <a href="https://github.com/Gcodesh" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <Github className="w-6 h-6" />
+            </a>
+            <a href="https://www.linkedin.com/in/abn-shaban-gharib-aa9163358" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <Linkedin className="w-6 h-6" />
+            </a>
+            <a href="mailto:gharib.s.dev@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+              <Mail className="w-6 h-6" />
+            </a>
           </div>
           
           <div className="flex items-center justify-center gap-2 text-muted-foreground pt-4">
