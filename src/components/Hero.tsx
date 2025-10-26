@@ -72,7 +72,7 @@ const Hero = () => {
             <a href="https://wa.me/201024226583" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary hover:scale-110 transition-all duration-300">
               <MessageCircle className="w-6 h-6" />
             </a>
-            <a href="mailto:gharib.s.dev@gmail.com" className="text-muted-foreground hover:text-primary hover:scale-110 transition-all duration-300">
+            <a href="mailto:GharibabnShaban@gmail.com" className="text-muted-foreground hover:text-primary hover:scale-110 transition-all duration-300">
               <Mail className="w-6 h-6" />
             </a>
           </div>

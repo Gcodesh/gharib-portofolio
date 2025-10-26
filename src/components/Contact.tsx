@@ -30,12 +30,12 @@ const Contact = () => {
 
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto pt-8">
             <a
-              href="mailto:gharib.s.dev@gmail.com"
+              href="mailto:GharibabnShaban@gmail.com"
               className="bg-card border border-border rounded-xl p-6 card-glow hover:scale-105 transition-all duration-500 group"
             >
               <Mail className="w-8 h-8 text-primary mx-auto mb-3 group-hover:scale-110 transition-transform duration-300" />
               <p className="font-semibold text-foreground mb-1">Email</p>
-              <p className="text-sm text-muted-foreground">gharib.s.dev@gmail.com</p>
+              <p className="text-sm text-muted-foreground">GharibabnShaban@gmail.com</p>
             </a>
 
             <a
