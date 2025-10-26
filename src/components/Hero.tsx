@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Facebook, MessageCircle } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Hero = () => {
@@ -60,13 +60,19 @@ const Hero = () => {
           </div>
           
           <div className="flex gap-4 justify-center">
-            <a href="https://github.com/Gcodesh" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="https://github.com/Gcodesh" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary hover:scale-110 transition-all duration-300">
               <Github className="w-6 h-6" />
             </a>
-            <a href="https://www.linkedin.com/in/abn-shaban-gharib-aa9163358" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="https://www.linkedin.com/in/abn-shaban-gharib-aa9163358" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary hover:scale-110 transition-all duration-300">
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="mailto:gharib.s.dev@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="https://www.facebook.com/share/167i8vaZsd/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary hover:scale-110 transition-all duration-300">
+              <Facebook className="w-6 h-6" />
+            </a>
+            <a href="https://wa.me/201024226583" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary hover:scale-110 transition-all duration-300">
+              <MessageCircle className="w-6 h-6" />
+            </a>
+            <a href="mailto:gharib.s.dev@gmail.com" className="text-muted-foreground hover:text-primary hover:scale-110 transition-all duration-300">
               <Mail className="w-6 h-6" />
             </a>
           </div>

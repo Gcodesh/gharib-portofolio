@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, MapPin, Facebook } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Facebook, MessageCircle } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
@@ -28,23 +28,34 @@ const Contact = () => {
             creative ideas, or potential collaborations.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto pt-8">
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto pt-8">
             <a
               href="mailto:gharib.s.dev@gmail.com"
-              className="bg-card border border-border rounded-xl p-6 card-glow hover:scale-105 transition-all group"
+              className="bg-card border border-border rounded-xl p-6 card-glow hover:scale-105 transition-all duration-500 group"
             >
-              <Mail className="w-8 h-8 text-primary mx-auto mb-3 group-hover:scale-110 transition-transform" />
+              <Mail className="w-8 h-8 text-primary mx-auto mb-3 group-hover:scale-110 transition-transform duration-300" />
               <p className="font-semibold text-foreground mb-1">Email</p>
               <p className="text-sm text-muted-foreground">gharib.s.dev@gmail.com</p>
+            </a>
+
+            <a
+              href="https://wa.me/201024226583"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-card border border-border rounded-xl p-6 card-glow hover:scale-105 transition-all duration-500 group"
+            >
+              <MessageCircle className="w-8 h-8 text-primary mx-auto mb-3 group-hover:scale-110 transition-transform duration-300" />
+              <p className="font-semibold text-foreground mb-1">WhatsApp</p>
+              <p className="text-sm text-muted-foreground">+20 102 422 6583</p>
             </a>
 
             <a
               href="https://github.com/Gcodesh"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-card border border-border rounded-xl p-6 card-glow hover:scale-105 transition-all group"
+              className="bg-card border border-border rounded-xl p-6 card-glow hover:scale-105 transition-all duration-500 group"
             >
-              <Github className="w-8 h-8 text-primary mx-auto mb-3 group-hover:scale-110 transition-transform" />
+              <Github className="w-8 h-8 text-primary mx-auto mb-3 group-hover:scale-110 transition-transform duration-300" />
               <p className="font-semibold text-foreground mb-1">GitHub</p>
               <p className="text-sm text-muted-foreground">github.com/Gcodesh</p>
             </a>
@@ -53,9 +64,9 @@ const Contact = () => {
               href="https://www.linkedin.com/in/abn-shaban-gharib-aa9163358"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-card border border-border rounded-xl p-6 card-glow hover:scale-105 transition-all group"
+              className="bg-card border border-border rounded-xl p-6 card-glow hover:scale-105 transition-all duration-500 group"
             >
-              <Linkedin className="w-8 h-8 text-primary mx-auto mb-3 group-hover:scale-110 transition-transform" />
+              <Linkedin className="w-8 h-8 text-primary mx-auto mb-3 group-hover:scale-110 transition-transform duration-300" />
               <p className="font-semibold text-foreground mb-1">LinkedIn</p>
               <p className="text-sm text-muted-foreground">linkedin.com/in/abn-shaban-gharib</p>
             </a>
@@ -64,9 +75,9 @@ const Contact = () => {
               href="https://www.facebook.com/share/167i8vaZsd/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-card border border-border rounded-xl p-6 card-glow hover:scale-105 transition-all group"
+              className="bg-card border border-border rounded-xl p-6 card-glow hover:scale-105 transition-all duration-500 group"
             >
-              <Facebook className="w-8 h-8 text-primary mx-auto mb-3 group-hover:scale-110 transition-transform" />
+              <Facebook className="w-8 h-8 text-primary mx-auto mb-3 group-hover:scale-110 transition-transform duration-300" />
               <p className="font-semibold text-foreground mb-1">Facebook</p>
               <p className="text-sm text-muted-foreground">facebook.com/gharibshaaban</p>
             </a>
